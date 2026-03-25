@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lorik & Alejna – 5 Monate 💛</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+body{margin:0;font-family:Inter,system-ui;background:linear-gradient(180deg,#fff5f2,#fffdfb);color:#2d2323;overflow-x:hidden}
+.container{max-width:1100px;margin:auto;padding:20px}
+
+h1,h2{font-family:'Playfair Display',serif}
+h1{font-size:70px;text-align:center;margin-top:80px;margin-bottom:10px}
+h2{margin-top:50px;font-size:34px}
+p{line-height:1.8;color:#6b5c5c}
+
+/* INTRO */
+.intro{
+position:fixed;
+top:0;left:0;width:100%;height:100%;
+background:linear-gradient(180deg,#ffd6e0,#fff);
+display:flex;flex-direction:column;align-items:center;justify-content:center;
+z-index:9999;
+transition:transform 1s ease-in-out;
+}
+.intro.hide{transform:translateY(-100%)}
+
+.intro-text{
+font-size:42px;
+animation:fadeIn 2s ease forwards;
+opacity:0;
+}
+@keyframes fadeIn{
+to{opacity:1}
+}
+
+.start-btn{
+padding:14px 28px;border:none;border-radius:30px;
+background:#ff6fa5;color:white;font-size:18px;cursor:pointer;
+margin-top:20px;
+opacity:0;
+animation:fadeIn 2s ease forwards;
+animation-delay:1.5s;
+}
+
+/* ROSE */
+.rose{
+position:fixed;font-size:26px;pointer-events:none;
+animation:roseUp 2.5s ease-out forwards;
+}
+@keyframes roseUp{
+0%{transform:translateY(0) scale(0.5);opacity:0}
+40%{opacity:1}
+100%{transform:translateY(-400px) scale(1.3);opacity:0}
+}
+
+.hero{text-align:center;padding:60px 20px}
+.counter{font-size:26px;color:#d66c7d;margin-top:10px}
+
+.card{background:rgba(255,255,255,0.85);backdrop-filter:blur(10px);padding:30px;border-radius:25px;box-shadow:0 20px 50px rgba(0,0,0,0.08);margin-top:30px;opacity:0;transform:translateY(40px);transition:all 0.8s}
+.card.visible{opacity:1;transform:translateY(0)}
+.card:hover{transform:translateY(-8px) scale(1.01)}
+
+.highlight{color:#d66c7d;font-weight:600}
+
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;margin-top:20px}
+.gallery img{width:100%;height:240px;object-fit:cover;border-radius:18px;transition:transform 0.4s}
+.gallery img:hover{transform:scale(1.05)}
+
+.heart{position:fixed;font-size:22px;pointer-events:none;animation:float 4s linear forwards}
+@keyframes float{0%{transform:translateY(0);opacity:1}100%{transform:translateY(-200px);opacity:0}}
+
+.divider{height:1px;background:linear-gradient(to right,transparent,#e8b3b3,transparent);margin:60px 0}
+
+</style>
+</head>
+
+<body>
+
+<!-- INTRO -->
+<div class="intro" id="intro">
+<div class="intro-text">Welcome my princess 💖</div>
+<button class="start-btn" onclick="startSite()">Start</button>
+</div>
+
+<section class="hero">
+<div class="container">
+<h1>5 Monate wir 💛</h1>
+<p><strong>Lorik & Alejna</strong></p>
+<p class="counter" id="days"></p>
+</div>
+</section>
+
+<div class="container">
+
+<div class="card">
+<h2>Für dich</h2>
+<p>Happy 5 Monate meine Prinzessin.</p>
+<p>Jeder Tag mit dir ist etwas Besonderes und ich freue mich auf alles, was noch kommt.</p>
+<p>Ich liebe dich <3 </p>
+</div>
+
+<div class="divider"></div>
+
+<div class="card">
+<h2>Was ich fühle</h2>
+<p>Ich wollte dir einfach sagen, wie viel du mir bedeutest.</p>
+<p>Mit dir fühle ich mich verstanden, glücklich und komplett.</p>
+<p>Ich liebe jede Minute mit dir :) </p>
+</div>
+
+<div class="divider"></div>
+
+<div class="card">
+<h2>Warum genau du</h2>
+<p>Deine Art, wie du die Welt sieht, wie du bist.</p>
+<p>Deine Art zu lachen, zu träumen, zu lieben, zu inspirieren, zu strahlen.</p>
+<p>Deine Art ehrlich zu sein, mich zum Staunen bringen, alles mit leidenschaft zu tun.</p>
+<p>Deine Arzt mutig zu sein, die Welt heller zumachen und einfach du selbst zu sein.</p>
+</div>
+
+<div class="divider"></div>
+
+<div class="card">
+<h2>Ein kleiner Brief</h2>
+<p>Happy 5 Monate Zemer.❤️</p>
+<p>Jeder Tag mit dir ist etwas Besonderes. Ich liebe einfach alles an dir.</p>
+<p>Du machst mein Herz soooooo Glücklick.</p>
+<p>Ich liebe dich über alles meine wunderschöne Frau.</p>
+<p class="highlight">– Lorik ❤️</p>
+</div>
+
+<div class="divider"></div>
+
+<div class="card">
+<h2>Unsere Momente 📸</h2>
+<p>Hier sind ein paar unserer schönsten Erinnerungen zusammen.</p>
+<div class="gallery">
+<img src="Images/Backenkuss_A.jpeg" alt="Moment 1">
+<img src="Images/Backenkuss_L.jpeg" alt="Moment 2">
+<img src="Images/Nikkah.jpeg" alt="Moment 3">
+<img src="Images/Screenshot 2026-03-25 200126.png" alt="Moment 4">
+<img src="Images/Brille_A.jpeg" alt="Moment 5">
+<img src="Images/Screenshot 2026-03-25 200020.png" alt="Moment 6">
+</div>
+</div>
+
+</div>
+
+<script>
+// Tage
+const startDate = new Date("2025-10-25");
+const today = new Date();
+const days = Math.floor((today - startDate)/(1000*60*60*24));
+document.getElementById("days").textContent = days + " Tage zusammen";
+
+// Start Effekt
+function startSite(){
+const intro=document.getElementById('intro');
+
+// Rosen
+for(let i=0;i<25;i++){
+setTimeout(()=>{
+const r=document.createElement('div');
+r.className='rose';
+r.innerHTML='🌹';
+r.style.left=Math.random()*window.innerWidth+'px';
+r.style.bottom='0px';
+document.body.appendChild(r);
+setTimeout(()=>r.remove(),2500);
+},i*80);
+}
+
+// Intro weg
+setTimeout(()=>{
+intro.classList.add('hide');
+},1200);
+}
+
+// Herzen
+function heart(x,y){
+const h=document.createElement("div");
+h.className="heart";
+h.innerHTML=Math.random()>0.5?"💛":"💖";
+h.style.left=x+"px";
+h.style.top=y+"px";
+document.body.appendChild(h);
+setTimeout(()=>h.remove(),4000);
+}
+document.addEventListener("click",e=>heart(e.clientX,e.clientY));
+
+// Scroll Animation
+const cards=document.querySelectorAll('.card');
+const observer=new IntersectionObserver(entries=>{
+entries.forEach(entry=>{
+if(entry.isIntersecting){entry.target.classList.add('visible');}
+});
+},{threshold:0.2});
+cards.forEach(c=>observer.observe(c));
+</script>
+
+</body>
+</html>
